@@ -1,0 +1,149 @@
+* {
+  font-family: sans-serif;
+  margin: 0;
+  /* Margem Externa */
+  padding: 0;
+  /* Margem Interna */
+  box-sizing: border-box;
+}
+/* Menu superior */
+
+.logo{ height: 20px;}
+
+.caixa-roxa{
+  display: flex;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 720px;
+  margin-top: 50px;
+  font-size: 15px;
+}
+
+
+ul{
+  display: flex;/* Um do lado do outro */
+  gap: 100px;/* Espaçamento automática, ao invés de usar margin*/
+  list-style: none; /* Sem aquelas bolinhas na frente da lista */
+  margin-left: 50px;
+  border-bottom: 1px solid;
+}
+
+li{font-size:12px;
+  font-weight:400px;
+  
+  
+}
+
+/* Menu inferior */
+
+.caixa-azul { 
+  display: flex;
+  justify-content: space-between;
+  /* Justificar conteúdo, entre os espaços, tipo no Word*/
+  align-items: center;/* alinhar todos os itens no centro, do div-caixa azul*/
+  padding: 50px; }
+  
+
+.titulo-iphone { 
+  font-size: 30px;
+}
+
+.titulo-secundario {
+  font-size: 40px;
+  /* Tamanho do texto */
+  margin-top: 10px;
+  /* Margem parte de cima */
+  margin-bottom: 20px;
+  /* Margem parte de baixo */
+}
+
+.paragrafo {
+  font-size: 15px;
+  margin-bottom: 25px;
+}
+
+.preco {
+  font-size: 20px;
+  color: #626262;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.botao {
+  background-color: #0071e3;
+  color: #ffffff;
+  padding: 10px 20px;
+  /* colocando 2 valores, o primeiro é o de cima, do preenchimento interno*/
+  border: none;
+  /*sem borda*/
+  border-radius: 20px;
+  /* borda arredondada*/
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.troca-cor {
+  /* pode ter mais de uma classe em um mesmo elemento, no caso está usando os nomes das cores e o troca-cor*/
+  width: 26px;
+  height: 26px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  /* fica uma mãozinha ao passar com o mouse*/
+}
+
+.azul {
+  background-color: #81A5C4;
+}
+
+.amarelo {
+  background-color: #F7DA47;
+}
+
+.branco {
+  background-color: #C1C1C1;
+}
+
+.preto {
+  background-color: #272D33;
+}
+
+.vermelho {
+  background-color: #B50012;
+}
+
+.roxo {
+  background-color: #EDE7F1;
+}
+
+.escolha-cor {
+  font-size: 16px;
+  color: #3a3a3a;
+  font-weight: 700;
+  margin-top: 50px;
+  margin-bottom: 15px;
+}
+
+.iPhone{
+  width: 500px;
+  height: 700px;
+  margin-top: 300px;
+  margin-left: 900px;
+  z-index: 99;
+  /* quem fica na frente de quem*/
+}
+
+.circulo{
+  width: 700px;
+  height: 700px;
+  background-color: lightblue;
+  position: absolute;
+  border-radius: 700px 700px 700px 700px;
+  left: 1050px;
+  top: 600px;
+}
+  
+  
+  /*(position: absolute) Com essa função eu posso colocar a cor onde eu quiser. 
+  clip-path: circle (600px at-right: 1000p)*/
